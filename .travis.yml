@@ -16,8 +16,8 @@ after_success:
   # Log in to the DOcker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push them to Docker hub
-  - docker push felipeparreirafb/multi-client 
   - docker push felipeparreirafb/multi-server
+  - docker push felipeparreirafb/multi-client 
   - docker push felipeparreirafb/multi-nginx
   - docker push felipeparreirafb/multi-worker
 
